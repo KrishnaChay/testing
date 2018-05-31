@@ -17,8 +17,8 @@ public class PracticeUtil {
 //        driver.get("https://www.google.com");
 
 
-      //  apitest.GetWeatherDetails();
-        javaAPITest.apitest();
+        apitest.GetWeatherDetails();
+       // javaAPITest.apitest();
 
     }
 

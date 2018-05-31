@@ -16,15 +16,13 @@ import org.json.JSONObject;
 import static javax.print.attribute.standard.ReferenceUriSchemesSupported.HTTP;
 
 public class JavaAPITest {
-    private static String baseURL = "https://digidev2.directline.com";
-    private static String brand = "directline";
 
     public void apitest() {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the city name:");
         String input = s.nextLine();
         try {
-            URL url = new URL("http://restapi.demoqa.com/utilities/weather/city/" + input);
+            URL url = new URL("https://dev-amends-directline.dlgdigitalservices.com/dlg-mta-api/addr/postcode/" + input);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             conn.setRequestProperty("Accept", "application/json");
