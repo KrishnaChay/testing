@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class DemoPage extends AbstractPage {
-    
+
 
     public WebElement testElement() {
         return waitAndFindElement(By.id("test"));
