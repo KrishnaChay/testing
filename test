@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+    stages {
+        stage ('Initialise') {
+            steps {
+          sh'''
+          echo "PATH = ${PATH}"
+          echo "M2_HOME = ${M2_HOME}"
+          '''
+            }
+
+        }
+
+        stage ('Deploy Build'){
+            steps{
+
+               echo 'hello World'
+
+            }
+        }
+
+    }
+}
